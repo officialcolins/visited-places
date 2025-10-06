@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Travel Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>🌍 My Travel Tracker</h1>
+  </header>
+
+  <main>
+    <section id="form-section">
+      <h2>Add a New Place</h2>
+      <form id="place-form">
+        <input type="text" id="location" placeholder="Location" required>
+        <input type="text" id="landmarks" placeholder="Landmarks (comma separated)" required>
+        <input type="text" id="time" placeholder="Time of Year (e.g., Summer 2025)" required>
+        <textarea id="notes" placeholder="Notes about your visit"></textarea>
+        <button type="submit">Add Place</button>
+      </form>
+    </section>
+
+    <section id="places-list">
+      <h2>Visited Places</h2>
+      <ul id="place-names"></ul>
+    </section>
+
+    <section id="place-details" class="hidden">
+      <h2>Place Details</h2>
+      <div id="details"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
